@@ -12,9 +12,34 @@ const background = document.querySelector(
 background.style.background =
   'linear-gradient(179.78deg, #FFFFFF 33.41%, #FD0086 84.81%';
 
+
 // update box in background
 const boxBackground = document.querySelectorAll('.box-background-color')
 boxBackground.forEach(el => el.style.background = 'linear-gradient(#FD0086, #FCBCDB)');
+
+// update upper bottom background
+const bottomBackground = document.querySelectorAll('.cta-section .background-image');
+bottomBackground.forEach(el => el.style.background = '#FCBCDB');
+
+// update lower bottom background
+const footer = document.querySelectorAll('.footer');
+footer[0].style.background = '#FD0086';
+
+const bottomMid = document.querySelectorAll('.vvss22');
+bottomMid[0].style.fill = '#FD0086';
+const fade = document.querySelectorAll('.vvss33');
+fade[0].style.fill = '#FCBCDB';
+const faqs = document.querySelectorAll('.flex-row .link-outer a');
+faqs[0].style.color = '#FCBCDB';
+const plus1 = document.querySelectorAll('.accordion-block .faq-list .tab-icon span.line-one');
+plus1.forEach(el => el.style.background = '#FD0086');
+const plus2 = document.querySelectorAll('.accordion-block .faq-list .tab-icon span.line-two');
+plus2.forEach(el => el.style.background = '#FD0086');
+
+
+
+
+
 
 // update h2s color
 
@@ -40,6 +65,8 @@ const testimonials = document.querySelectorAll('.testimonial-outer');
 testimonials.forEach(el => el.style.background = '#FCBCDB');
 const workshops = document.querySelectorAll('.events-section');
 workshops.forEach(el => el.style.background = '#FCBCDB');
+const owlDots = document.querySelectorAll('.events-section .owl-dots button.owl-dot');
+owlDots.forEach(el => el.style.background = '#FD0086')
 
 
 // BUTTONS //
@@ -49,7 +76,11 @@ const submit = document.querySelectorAll('.hs-button');
 submit[0].style.background = '#FD0086';
 submit[0].style.border = '#FD0086';
 const learnMore = document.querySelectorAll('.primary-button');
-learnMore.forEach(el => el.style.background = '#FD0086')
+learnMore.forEach(el => el.style.background = '#FD0086');
+// text color for bottom buttoms
+// const bottomText = document.querySelectorAll('.cta-section .calendly_outer ');
+// bottomText.forEach(el => el.style.color = 'white');
+
 
 
 
@@ -89,7 +120,28 @@ studentTableImg.style.backgroundImage = "url(https://i.ytimg.com/vi/y3B4Gv2EqZk/
 const csPrepImg = document.querySelector("#hs_cos_wrapper_widget_1657109223471 > section > div > ul > li:nth-child(3) > div > div.image-outer > div");
 csPrepImg.style.backgroundImage = "url(https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2014/11/21/1416571342119/Barbie-at-a-computer-012.jpg?width=620&quality=85&auto=format&fit=max&s=55aed1cbce8b5ff7f8a3335e0e9b62a6)";
 
-// update bg-image
+// update apply in 4 steps image 
 const libraryStudents = document.querySelector("#admissions > div > div > div.img-block-out > div.bg-img-out > div");
 libraryStudents.style.backgroundImage = "url(https://miro.medium.com/v2/resize:fit:640/1*yAwKRJMTECrXJPvUDd2fxg.jpeg)";
 
+// WORKSHOPS IMAGES 
+
+// update pair programming image 
+const pairProgImg = document.querySelector("#events-slider > div.owl-stage-outer > div > div:nth-child(2) > div > div > div.event-img-out > a > div");
+
+pairProgImg.style.backgroundImage = "url(https://i.ytimg.com/vi/0qmjsYOqQaM/maxresdefault.jpg)";
+
+
+
+
+// // SPARKLE
+// const body = document.querySelector('body');
+// const container = document.createElement('div');
+// container.class = 'sparkle';
+// container.src = '/Users/supsup/Downloads/confetti_anim_dm.png' ;
+// body.appendChild(container);
+
+// const intro = document.querySelector('sparkle');
+// window.addEventListener('DOMContentLoaded', () => {
+//     setTimeout()
+// })
