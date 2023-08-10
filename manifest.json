@@ -4,6 +4,9 @@
     "description": "Barbify Codesmith's homepage",
     "manifest_version": 3,
     "author": "Leona Thompson and Meredith Frazier Britt",
+    // "icons": {
+    //     "128": "barbify-cs-icon.png"
+    // },
     "content_scripts": [
         {
             "matches": ["https://www.codesmith.io/"],

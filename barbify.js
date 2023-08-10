@@ -12,12 +12,37 @@ const background = document.querySelector(
 background.style.background =
   'linear-gradient(179.78deg, #FFFFFF 33.41%, #FD0086 84.81%';
 
+// update box in background
+const boxBackground = document.querySelectorAll('.box-background-color')
+boxBackground.forEach(el => el.style.background = 'linear-gradient(#FD0086, #FCBCDB)');
+
 // update h2s color
 
 const h2s = document.querySelectorAll('h2');
 h2s.forEach(h2 => (h2.style.color = '#FD0086'));
 
+// update h4s color
+const h4s = document.querySelectorAll('h4');
+h4s.forEach(el => el.style.color = '#FD0086');
+
+
+
 // change the dots to pink
 const svg1 = document.querySelector(
   '#hs_cos_wrapper_widget_1657116293820 > section > div.content-wrapper > div > div.img-block > div.top-shape > svg',
 );
+
+
+// update bullet points 
+const bulletPoints = document.querySelectorAll('.item-no')
+bulletPoints.forEach(el => el.style.background = '#FCBCDB')
+
+
+// update students at table image 
+const studentTableImg = document.querySelector("#hs_cos_wrapper_widget_1657109223471 > section > div > ul > li:nth-child(2) > div > div.image-outer > div");
+studentTableImg.style.backgroundImage = "url(https://i.ytimg.com/vi/y3B4Gv2EqZk/maxresdefault.jpg)";
+
+// update bg-image
+
+const libraryStudents = document.querySelector("#admissions > div > div > div.img-block-out > div.bg-img-out > div");
+libraryStudents.style.backgroundImage = "url(https://miro.medium.com/v2/resize:fit:640/1*yAwKRJMTECrXJPvUDd2fxg.jpeg)";
