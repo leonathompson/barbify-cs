@@ -69,6 +69,12 @@ function barbify(event) {
   );
   plus2.forEach(el => (el.style.background = '#FD0086'));
 
+  // update h1
+  const h1 = document.querySelectorAll('#hs_cos_wrapper_widget_1657116293820 > section > div.content-wrapper > div > div.cnt-block > div > h1');
+  h1[0].style.color = '#FD0086';
+
+
+  
   // update h2s color
   const h2s = document.querySelectorAll('h2');
   h2s.forEach(h2 => (h2.style.color = '#FD0086'));
@@ -194,6 +200,13 @@ function barbify(event) {
 
   jshpImg.style.backgroundImage =
     'url(https://www.evodesk.com/blog/wp-content/uploads/2016/02/game-developer-barbie.jpg)';
+
+
+  const openHouse = document.querySelector("#events-slider > div.owl-stage-outer > div > div:nth-child(3) > div > div > div.event-img-out > a > div");
+  openHouse.style.backgroundImage = 'url(https://images.mansionglobal.com/im-50684050?width=1280&size=1)';
+
+
+    
   // SPARKLE
   // const body = document.querySelector('body');
   // const container = document.createElement('div');
