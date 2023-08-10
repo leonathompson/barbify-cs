@@ -187,6 +187,13 @@ function barbify(event) {
   pairProgImg.style.backgroundImage =
     'url(https://i.ytimg.com/vi/0qmjsYOqQaM/maxresdefault.jpg)';
 
+  // update JSHP image
+  const jshpImg = document.querySelector(
+    '#events-slider > div.owl-stage-outer > div > div.owl-item.active > div > div > div.event-img-out > a > div',
+  );
+
+  jshpImg.style.backgroundImage =
+    'url(https://www.evodesk.com/blog/wp-content/uploads/2016/02/game-developer-barbie.jpg)';
   // SPARKLE
   // const body = document.querySelector('body');
   // const container = document.createElement('div');
