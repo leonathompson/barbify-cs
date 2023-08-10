@@ -1,0 +1,17 @@
+{
+    "name": "Barbify Codesmith",
+    "version": "1.0.0",
+    "description": "Barbify Codesmith's homepage",
+    "manifest_version": 3,
+    "author": "Leona Thompson and Meredith Frazier Britt",
+    "content_scripts": [
+        {
+            "matches": ["https://www.codesmith.io/"],
+            "js": ["./barbify.js"],
+            "css": ["./CSS/main.min.css"]
+        }
+    ]
+    // "action":{
+    //     "default_popup": "index.html",
+    //     "default_title": "Barbify Codesmith"
+}
